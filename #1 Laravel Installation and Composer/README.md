@@ -46,22 +46,40 @@ composer global require "laravel/installer"
 5. Laravel global adalah package dari composer, kalo mau lihat package lainnya di [packagist.org](https://packagist.org/).
 
 6. Pastikan path composer berada pada `$HOME/.composer/vendor/path`.
-- Cara pertama pada file `~/.bashrc` masukan `export PATH="$HOME/.composer/vendor/bin:$PATH`
+- Cara pertama pada file `~/.bashrc`:
+
+```bash
+vim ~/.bashrc
+```
+
+- Masukan kode berikut pada file `.bashrc`:
+
+```bash
+`export PATH="$HOME/.composer/vendor/bin:$PATH`
+```
+
+- Refresh file dengan kode berikut:
+
+```bash
+source ~/.bashrc
+```
+
 - Atau jika kita menggunakan `zsh` buka file `~/.zshrc` masukan kode berikut
 
 ```bash
 export PATH=$HOME/bin:/usr/local/bin:~/.composer/vendor/bin:$PATH
 ```
 
-7. PHP Artisan, adalah laravel command line utility
-- check terminal dengan command berikut:
-
-```bash
-php artisan -v
-```
-
-8. Buat project dengan development environment
+7. Buat project dengan development environment
 
 ```bash
 laravel new blog --dev
+```
+
+8. PHP Artisan, adalah laravel command line utility
+- check terminal dengan command berikut:
+
+```bash
+cd blog
+php artisan -v
 ```
