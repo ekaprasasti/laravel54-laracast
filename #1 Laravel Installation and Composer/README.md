@@ -22,6 +22,8 @@ php -r "unlink('composer-setup.php');"
 
 ![composer install error](/assets/composer-install-error.png)
 
+Untuk memperbaikinya edit url menjadi `http://getcomposer.org/installer` pada kode diatas.
+
 3. Composer Getting Started
 - Untuk dokomentasi lengkap lihat [di sini](https://getcomposer.org/doc/00-intro.md#installation-linux-unix-osx)
 - Install secara global
@@ -33,7 +35,7 @@ mv composer.phar /usr/local/bin/composer
 
 - Ketik `composer` pada terminal, jika muncul dokumentasi dari command composer maka kita telah berhasil menginstalnya.
 
-3. Buat project laravel baru pada terminal
+4. Buat project laravel baru pada terminal
 - Ada dua cara, dengan `laravel new app` atau dengan composer `composer create-project --prefer-dist laravel/laravel blog`
 - Direkomendasikan menggunakan `laravel new app`, maka kita harus menginstall command global laravel. Buka terminal ketikan perintah berikut:
 
@@ -41,9 +43,9 @@ mv composer.phar /usr/local/bin/composer
 composer global require "laravel/installer"
 ```
 
-4. Laravel global adalah package dari composer, kalo mau lihat package lainnya di [packagist.org](https://packagist.org/).
+5. Laravel global adalah package dari composer, kalo mau lihat package lainnya di [packagist.org](https://packagist.org/).
 
-5. Pastikan path composer berada pada `$HOME/.composer/vendor/path`.
+6. Pastikan path composer berada pada `$HOME/.composer/vendor/path`.
 - Cara pertama pada file `~/.bashrc` masukan `export PATH="$HOME/.composer/vendor/bin:$PATH`
 - Atau jika kita menggunakan `zsh` buka file `~/.zshrc` masukan kode berikut
 
@@ -51,14 +53,14 @@ composer global require "laravel/installer"
 export PATH=$HOME/bin:/usr/local/bin:~/.composer/vendor/bin:$PATH
 ```
 
-6. PHP Artisan, adalah laravel command line utility
+7. PHP Artisan, adalah laravel command line utility
 - check terminal dengan command berikut:
 
 ```bash
 php artisan -v
 ```
 
-7. Buat project dengan development environment
+8. Buat project dengan development environment
 
 ```bash
 laravel new blog --dev
