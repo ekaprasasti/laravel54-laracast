@@ -20,4 +20,4 @@ php -r "unlink('composer-setup.php');"
 
 	- Pada kasus, akan muncul error seperti ini:
 
-![composer install error](/image/composer-install-error.png)
+![composer install error](/assets/composer-install-error.png)
